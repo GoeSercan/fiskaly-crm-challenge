@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify';
-import customer from './customer';
+import customer from './customerRoutes';
 
 declare module 'fastify' {
     interface FastifyInstance {

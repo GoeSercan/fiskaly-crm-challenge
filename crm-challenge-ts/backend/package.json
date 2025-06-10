@@ -33,6 +33,7 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
+    "@types/uuid": "^10.0.0",
     "axios": "^0.24.0",
     "dotenv": "^10.0.0",
     "env-schema": "^3.5.0",
@@ -47,7 +48,8 @@
     "http-errors": "^1.8.1",
     "make-promises-safe": "^5.1.0",
     "pg": "^8.7.1",
-    "pg-format": "^1.0.4"
+    "pg-format": "^1.0.4",
+    "uuid": "^11.1.0"
   },
   "prettier": {
     "arrowParens": "always",
