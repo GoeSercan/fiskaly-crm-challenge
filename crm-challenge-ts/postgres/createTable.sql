@@ -1,7 +1,7 @@
-CREATE TABLE customers(
-    customer_id uuid,
-    first_name text,
-    last_name text,
-    mail text,
-    tss_id uuid
+CREATE TABLE customers (
+    customer_id UUID NOT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    mail TEXT NOT NULL,
+    tss_id UUID PRIMARY KEY
 );
