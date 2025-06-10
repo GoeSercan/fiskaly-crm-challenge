@@ -16,6 +16,9 @@ services:
     build: ./backend
     ports:
       - '3001:3001'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
     command: npm run dev
     environment:
       - HOST=0.0.0.0
@@ -26,6 +29,9 @@ services:
     build: ./frontend
     ports:
       - '3000:3000'
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
     environment:
       - HOST=0.0.0.0
       - PORT=3000

@@ -1,11 +1,12 @@
-FROM node:14-alpine
+FROM node:20-alpine
 
-ENV NODE_ENV=production
-
+ENV NODE_ENV=development   
 WORKDIR /app
-COPY . /app/
-RUN npm install --save-dev
 
-EXPOSE 3001/tcp
+COPY package.json package-lock.json /app/
+RUN npm install           
+
+COPY . /app
+EXPOSE 3001
 
 CMD ["npm", "run", "dev"]
